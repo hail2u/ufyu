@@ -1,6 +1,6 @@
 # Blosxom Plugin: ufyu
 # Author(s): Kyo Nagashima <kyo@hail2u.net>, http://hail2u.net/
-# Version: 2006-09-24
+# Version: 0.3
 # Documentation: See the bottom of this file or type: perldoc ufyu
 
 package ufyu;
