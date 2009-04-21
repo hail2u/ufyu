@@ -115,12 +115,6 @@ sub markup_blocklevel {
       $html .= "<p>" . &markup_inline($1) . "</p>\n" if $1;
       $flag = "</blockquote>";
 
-    # start with '    ' => pre and code
-    } elsif (/^[ ]{4}(.*)$/) {
-      $html .= "<pre><code>" if !$flag;
-      $html .= &markup_inline($1) . "\n";
-      $flag = "</code></pre>";
-
     # start with ' ' => pre
     } elsif (/^[ ](.*)$/) {
       $html .= "<pre>\n" if !$flag;
