@@ -1,6 +1,6 @@
 # Blosxom Plugin: ufyu
 # Author(s): Kyo Nagashima <kyo@hail2u.net>, http://hail2u.net/
-# Version: 0.3
+# Version: 0.3.1
 # Documentation: See the bottom of this file or type: perldoc ufyu
 
 package ufyu;
@@ -181,7 +181,7 @@ sub markup_inline {
 
   $str = encode_entities($str, $unsafe_chars);
   $str =~ s!&lt;br$xhtml?&gt;!<br$xhtml>\n!g;
-  $str =~ s!$regexp_inline\*(.*?)\*!<$1>$2</$1>!g;
+  $str =~ s!\[\[($regexp_inline):(.*?)\]\]!<$1>$2</$1>!g;
   $str =~ s!\[\[img:(.+?):(http:\/\/.*?\.(png|jpg|jpeg|gif))\]\]!<img src="$2" alt="$1"$xhtml>!g;
   $str =~ s!\[\[(\w+?):(.+?):(.+?)\]\]!&anchor_maker($1, $2, $3)!eg;
 
