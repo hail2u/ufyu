@@ -217,7 +217,7 @@ future version.
 
 =head1 VERSION
 
-2005-09-19
+0.3.1
 
 =head1 AUTHOR
 
@@ -261,7 +261,7 @@ http://www.freeml.com/info/blosxom@freeml.com
 
 =head1 LICENSE
 
-Copyright 2005, Kyo Nagashima <kyo@hail2u.net>, http://hail2u.net/
+Copyright 2005-2009, Kyo Nagashima <kyo@hail2u.net>, http://hail2u.net/
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the "Software"),
