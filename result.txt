@@ -9,7 +9,7 @@
 <!-- Nisl ante, aliquam in, consequat quis, tempus et, leo. Integer dignissim. Quisque mattis, orci a rutrum malesuada, nulla ligula facilisis purus, quis dapibus velit odio ut nisl. -->
 
 <p>Pellentesque lacus leo,<br />
-<em>em</em>, <cite>cite</cite> <dfn>dfn</dfn> <code>code</code>, <samp>samp</samp> <kbd>kbd</kbd>, <var>var</var>. <abbr>abbr</abbr> <acronym>acronym</acronym> <del>del</del> <ins>ins</ins>. Pellentesque  euismod nisl.</p>
+<em>aliquam</em> <strong>id</strong>, <cite>blandit</cite> <dfn>eu</dfn> <code>consequat</code>, <samp>bibendum</samp> <kbd>non</kbd>, <var>est</var>. <abbr>Suspendisse</abbr> <acronym>elementum</acronym> <del>consequat</del> <ins>neque</ins>. Pellentesque  euismod nisl.</p>
 
 <hr />
 
