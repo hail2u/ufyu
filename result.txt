@@ -13,7 +13,7 @@
 
 <hr />
 
-<p>Amet, consectetuer <img src="http://example.com/example.png" alt="adipiscing" /> elit. Integer a ligula a libero hendrerit iaculis. Praesent elementum porta enim.</p>
+<p>Amet, consectetuer <img src="http://example.com/example.png" alt="adipiscing" width="320" height="240" /> elit. Integer a ligula a libero hendrerit iaculis. Praesent elementum porta enim.</p>
 
 <h4>Lorem Ipsum</h4>
 

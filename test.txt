@@ -14,7 +14,7 @@ Pellentesque lacus leo,<br />[[em:aliquam]] [[strong:id]], [[cite:blandit]] [[df
 
 ----
 
-Amet, consectetuer [[img:adipiscing:http://example.com/example.png]] elit. Integer a ligula a libero hendrerit iaculis. Praesent elementum porta enim.
+Amet, consectetuer [[img:adipiscing:http://example.com/example.png:320:240]] elit. Integer a ligula a libero hendrerit iaculis. Praesent elementum porta enim.
 
 * Lorem Ipsum
 
