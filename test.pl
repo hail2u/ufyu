@@ -1,13 +1,15 @@
-#!/usr/local/bin/perl
+#!/usr/bin/perl
 
 use strict;
+use warnings;
+
+use FileHandle;
 
 require "ufyu";
 
-open(FH, "./test.txt") or die $!;
-my $text = join '', <FH>;
-close(FH);
+my $fh = new FileHandle;
 
-print &ufyu::markup_blocklevel($text);
-
-exit;
+if ($fh->open("test.txt")) {
+  print &ufyu::markup_blocklevel(join("", <$fh>));
+  $fh->close;
+}
