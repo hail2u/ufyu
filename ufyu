@@ -22,16 +22,15 @@ my $as_xhtml = 1;
 # Hash-style settings for anchor maker
 #
 # Example1:
-#   [[a:example:http://example.com/]]
-#   => <a href="http://example.com">example</a>
+#   [[google:iPod Nano:ナノなの]]
+#   => <a href="http://www.google.com/search?ie=UTF-8&lr=&q=iPod%20Nano">ナノなの</a>
 #
 # Example2:
-#   [[google:ナノなの:iPod Nano]]
-#   => <a href="http://www.google.com/search?ie=UTF-8&lr=&q=iPod%20Nano">ナノなの</a>
+#   [[amazon:4873112028:Perl Cookbook Vol.1]]
+#   => <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4873112028/hail2unet-22/ref=nosim">Perl Cookbook Vol.1</a>
 #
 # I don't have more word to explain, sorry.
 my $anchor_sets = {
-  a      => '%s',
   google => 'http://www.google.com/search?ie=UTF-8&amp;lr=&amp;q=%es',
   amazon => 'http://www.amazon.co.jp/exec/obidos/ASIN/%s/hail2unet-22/ref=nosim',
   cpan   => 'http://search.cpan.org/search?module=%s',
@@ -182,15 +181,16 @@ sub markup_inline {
 
   $str = encode_entities($str, $unsafe_chars);
   $str =~ s!&lt;br$xhtml?&gt;!<br$xhtml>\n!g;
-  $str =~ s!\[\[$regexp_inline:(.*?)\]\]!<$1>$2</$1>!g;
-  $str =~ s!\[\[img:(.+?):(http:\/\/.*?\.(png|jpg|jpeg|gif)):(\d+?):(\d+?)\]\]!<img src="$2" alt="$1" width="$4" height="$5"$xhtml>!g;
+  $str =~ s!\[\[$regexp_inline:(.+?)\]\]!<$1>$2</$1>!g;
+  $str =~ s!\[\[img:(https?:\/\/.+?\.(png|jpg|jpeg|gif)):(\d+?):(\d+?):(.+?)\]\]!<img src="$1" alt="$5" width="$3" height="$4"$xhtml>!g;
+  $str =~ s!\[\[a:(https?:\/\/.+?):(.+?)\]\]!<a href="$1">$2</a>!g;
   $str =~ s!\[\[(\w+?):(.+?):(.+?)\]\]!&anchor_maker($1, $2, $3)!eg;
 
   return $str;
 }
 
 sub anchor_maker {
-  my($mode, $str, $var) = @_;
+  my($mode, $var, $str) = @_;
 
   return "[[$mode\:$var]]" if !defined($anchor_sets->{$mode});
   my $url = $anchor_sets->{$mode};
