@@ -6,6 +6,7 @@
 package ufyu;
 
 use strict;
+use warnings;
 
 # --- Configurable variables -----------
 
