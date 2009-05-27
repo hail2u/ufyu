@@ -124,6 +124,7 @@ sub markup_blocklevel {
     # start with '-',  '--',  '---',  '-----' => ul
     } elsif (/^(\-{1,4})\s*(.*)$/) {
       $html .= "<ul>\n" if !$flag;
+      $nest = 0 if !$nest;
 
       if (length($1) > $nest) {
         $html =~ s!</li>$!\n<ul>!;
@@ -142,6 +143,7 @@ sub markup_blocklevel {
     # start with '+', '++', '+++', '++++' => ol
     } elsif (/^(\+{1,4})\s*(.*)$/) {
       $html .= "<ol>\n" if !$flag;
+      $nest = 0 if !$nest;
 
       if (length($1) > $nest) {
         $html =~ s!</li>$!\n<ol>!;
