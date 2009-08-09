@@ -127,7 +127,7 @@ sub markup_blocklevel {
       $nest = 0 if !$nest;
 
       if (length($1) > $nest) {
-        $html =~ s!</li>$!\n<ul>!;
+        $html =~ s!</li>$!\n<ul>!; # !
       } elsif (length($1) == ($nest - 1)) {
         $html .= "</ul>\n</li>\n";
       } elsif (length($1) == ($nest - 2)) {
@@ -146,7 +146,7 @@ sub markup_blocklevel {
       $nest = 0 if !$nest;
 
       if (length($1) > $nest) {
-        $html =~ s!</li>$!\n<ol>!;
+        $html =~ s!</li>$!\n<ol>!; # !
       } elsif (length($1) == ($nest - 1)) {
         $html .= "</ol>\n</li>\n";
       } elsif (length($1) == ($nest - 2)) {
@@ -173,7 +173,11 @@ sub markup_blocklevel {
     }
   }
 
-  $html .= "$flag\n" if $flag;
+  if ($flag eq "</ul>" || $flag eq "</ol>") {
+    $html .= $flag x $nest;
+  } elsif ($flag) {
+    $html .= "$flag\n";
+  }
 
   return $html;
 }
