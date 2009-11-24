@@ -15,15 +15,15 @@
 
 <p>Amet, consectetuer <img src="http://example.com/example.png" alt="adipiscing" width="320" height="240" /> elit. Integer a ligula a libero hendrerit iaculis. Praesent elementum porta enim.</p>
 
-<h4>Lorem Ipsum</h4>
+<h1>Lorem Ipsum</h1>
 
 <p>Aliquam placerat, arcu in <a href="http://example.com/">bibendum elementum</a>, magna elit eleifend purus, eget commodo lorem dui quis sapien. Nullam tempus. Sed facilisis fringilla magna.</p>
 
-<h5>Dolor Sit</h5>
+<h2>Dolor Sit</h2>
 
 <p>Nisi, pharetra nec, lobortis sed, <a href="http://www.google.com/search?ie=UTF-8&amp;lr=&amp;q=%E3%81%84%E3%82%93%E3%81%9F%E3%83%BC%E3%81%A0%E3%82%80">interdum</a> eget, arcu. Nullam mollis, turpis id faucibus faucibus, velit velit condimentum justo, sodales varius ante nibh vitae felis. In risus purus, rutrum nec, pretium eu, varius ut, elit.</p>
 
-<h6>Vestibulum Ante</h6>
+<h3>Vestibulum Ante</h3>
 
 <p>Ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque at libero eget ipsum pellentesque dictum. Quisque sollicitudin tellus nec ligula. Sed nec velit quis ante aliquam aliquet.</p>
 
