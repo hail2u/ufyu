@@ -83,9 +83,11 @@ sub markup_blocklevel {
   for (split(/\n/, $text)) {
     # blank line
     if (/^$/) {
-      $html .= "$flag\n" if $flag;
+      $html .= &close_tag($flag, $nest) if $flag;
       $html .= "\n";
+      $verbatim = 0;
       $flag = '';
+      $nest = 0;
 
     # verbatim start
     } elsif (/^<<<<$/) {
@@ -130,38 +132,40 @@ sub markup_blocklevel {
     # start with '-',  '--',  '---',  '-----' => ul
     } elsif (/^(\-{1,4})\s*(.*)$/) {
       $html .= "<ul>\n" if !$flag;
-      $nest = 0 if !$nest;
+      $nest = 1 if !$nest;
+      my $level = length($1);
 
-      if (length($1) > $nest) {
+       if ($level > $nest) {
         $html =~ s!</li>$!\n<ul>!; # !
-      } elsif (length($1) == ($nest - 1)) {
+      } elsif ($level == ($nest - 1)) {
         $html .= "</ul>\n</li>\n";
-      } elsif (length($1) == ($nest - 2)) {
+      } elsif ($level == ($nest - 2)) {
         $html .= "</ul>\n</li>\n</ul>\n</li>\n";
-      } elsif (length($1) == ($nest - 3)) {
+      } elsif ($level == ($nest - 3)) {
         $html .= "</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n";
       }
 
-      $nest = length($1);
+      $nest = $level;
       $html .= "<li>" . &markup_inline($2) . "</li>\n";
       $flag = "</ul>";
 
     # start with '+', '++', '+++', '++++' => ol
     } elsif (/^(\+{1,4})\s*(.*)$/) {
       $html .= "<ol>\n" if !$flag;
-      $nest = 0 if !$nest;
+      $nest = 1 if !$nest;
+      my $level = length($1);
 
-      if (length($1) > $nest) {
+      if ($level > $nest) {
         $html =~ s!</li>$!\n<ol>!; # !
-      } elsif (length($1) == ($nest - 1)) {
+      } elsif ($level == ($nest - 1)) {
         $html .= "</ol>\n</li>\n";
-      } elsif (length($1) == ($nest - 2)) {
+      } elsif ($level == ($nest - 2)) {
         $html .= "</ol>\n</li>\n</ol>\n</li>\n";
-      } elsif (length($1) == ($nest - 2)) {
+      } elsif ($level == ($nest - 3)) {
         $html .= "</ol>\n</li>\n</ol>\n</li>\n</ol>\n</li>\n";
       }
 
-      $nest = length($1);
+      $nest = $level;
       $html .= "<li>" . &markup_inline($2) . "</li>\n";
       $flag = "</ol>";
 
@@ -179,13 +183,21 @@ sub markup_blocklevel {
     }
   }
 
-  if ($flag eq "</ul>" || $flag eq "</ol>") {
-    $html .= $flag x $nest;
-  } elsif ($flag) {
-    $html .= "$flag\n";
-  }
+  $html .= &close_tag($flag, $nest) if $flag;
 
   return $html;
+}
+
+sub close_tag {
+  my($flag, $nest) = @_;
+
+  my $str = "$flag\n";
+
+  if ($nest && ($flag eq "</ul>" || $flag eq "</ol>")) {
+    $str = ($flag . "\n") x $nest;
+  }
+
+  return $str;
 }
 
 sub markup_inline {
