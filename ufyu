@@ -19,6 +19,11 @@ my $with_meta = 1;
 # Do you want to output as XHTML?
 my $as_xhtml = 1;
 
+# How many levels does heading start? 
+# 1: * => <h1>, ** => <h2>, *** => <h3>
+# 4: * => <h4>, ** => <h5>, *** => <h6>
+my $heading_starting_level = 1;
+
 # Hash-style settings for anchor maker
 #
 # Example1:
@@ -40,6 +45,7 @@ my $anchor_sets = {
 
 my $unsafe_chars = '<>&"\'';
 my $xhtml = $as_xhtml ? ' /' : '';
+my $level = $heading_starting_level ? $heading_starting_level - 1 : 1;
 my $regexp_inline = "(em|strong|cite|dfn|code|samp|kbd|var|abbr|acronym|ins|del)";
 
 # --------------------------------------
@@ -103,10 +109,10 @@ sub markup_blocklevel {
       $html .= "<!-- " . &markup_inline($1) . " -->\n";
       $flag = '';
 
-    # start with '*', '**', '***' => h4, h5, h6
+    # start with '*', '**', '***' => hx
     } elsif (/^(\*{1,3})\s*(.*)$/) {
-      my $level = length($1) + 3;
-      $html .= "<h$level>" . &markup_inline($2) . "</h$level>\n";
+      my $lv = length($1) + $level;
+      $html .= "<h$lv>" . &markup_inline($2) . "</h$lv>\n";
       $flag = '';
 
     # start with '>' => blockquote and p

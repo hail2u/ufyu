@@ -5,7 +5,7 @@ use warnings;
 
 use FileHandle;
 
-require "ufyu";
+require "./ufyu";
 
 my $fh = new FileHandle;
 
