@@ -46,7 +46,7 @@ my $anchor_sets = {
 my $unsafe_chars = '<>&"\'';
 my $xhtml = $as_xhtml ? ' /' : '';
 my $level = $heading_starting_level ? $heading_starting_level - 1 : 1;
-my $regexp_inline = "(em|strong|cite|dfn|code|samp|kbd|var|abbr|acronym|ins|del)";
+my $regexp_inline = "(em|strong|dfn|code|samp|kbd|var|cite|abbr|acronym|q|sub|sup|ins|del|tt|i|b|big|small)";
 
 # --------------------------------------
 
