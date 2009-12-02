@@ -81,16 +81,8 @@ sub markup_blocklevel {
   my($html, $verbatim, $flag, $nest);
 
   for (split(/\n/, $text)) {
-    # blank line
-    if (/^$/) {
-      $html .= &close_tag($flag, $nest) if $flag;
-      $html .= "\n";
-      $verbatim = 0;
-      $flag = '';
-      $nest = 0;
-
     # verbatim start
-    } elsif (/^<<<<$/) {
+    if (/^<<<<$/) {
       $verbatim = 1;
 
     # verbatim end
@@ -100,6 +92,14 @@ sub markup_blocklevel {
     # do verbatim
     } elsif ($verbatim) {
       $html .= "$_\n";
+
+    # blank line
+    } elsif (/^$/) {
+      $html .= &close_tag($flag, $nest) if $flag;
+      $html .= "\n";
+      $verbatim = 0;
+      $flag = '';
+      $nest = 0;
 
     # repeat '-'  => hr
     } elsif (/^\-+$/) {
