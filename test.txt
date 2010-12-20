@@ -44,16 +44,16 @@ Ut quis ante. Donec sodales elit non odio. Suspendisse egestas lectus et diam. I
 
 Leo, sit amet scelerisque dui nisi quis risus. Suspendisse interdum, nunc sit amet pretium scelerisque, velit nunc accumsan mi, eget eleifend nibh dui id neque. Aliquam erat volutpat.
 
-- sed imperdiet ligula
--- sed dolor donec
--- sit amet quam
---- nullam elementum enim
---- aliquam nec dui
----- et odio donec
----- venenatis tincidunt felis
---- eget nisl ultrices
-- aliquam euismod dui
-- eget imperdiet vestibulum
+* sed imperdiet ligula
+** sed dolor donec
+** sit amet quam
+*** nullam elementum enim
+*** aliquam nec dui
+**** et odio donec
+**** venenatis tincidunt felis
+*** eget nisl ultrices
+* aliquam euismod dui
+* eget imperdiet vestibulum
 
 Purus purus feugiat turpis, et tempor arcu nunc quis nunc. Duis purus felis, aliquet eu, blandit sed, ultrices quis, est. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 

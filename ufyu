@@ -124,7 +124,7 @@ sub markup_blocklevel {
       $html .= &markup_inline($1) . "\n";
       $flag = "</pre>";
 
-    # start with '-',  '--',  '---',  '-----' => ul
+    # start with '*',  '**',  '***',  '*****' => ul
     } elsif (/^(\-{1,4})\s*(.*)$/) {
       $html .= "<ul>\n" if !$flag;
       $nest = 1 if !$nest;
