@@ -10,8 +10,6 @@
 
 Duis facilisis porttitor arcu. Maecenas odio dui, dapibus sit amet, ultricies in, tempor a, lectus. In in nulla sit amet purus tempor mattis.
 
-# Nisl ante, aliquam in, consequat quis, tempus et, leo. Integer dignissim. Quisque mattis, orci a rutrum malesuada, nulla ligula facilisis purus, quis dapibus velit odio ut nisl.
-
 Pellentesque lacus leo,<br />[[em:aliquam]] [[strong:id]], [[cite:blandit]] [[dfn:eu]] [[code:consequat]], [[samp:bibendum]] [[kbd:non]], [[var:est]]. [[abbr:Suspendisse]] [[acronym:elementum]] [[del:consequat]] [[ins:neque]]. Pellentesque  euismod nisl.
 
 ----

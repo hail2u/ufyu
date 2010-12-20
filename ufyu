@@ -106,11 +106,6 @@ sub markup_blocklevel {
       $html .= "<hr$xhtml>\n";
       $flag = '';
 
-    # start with '#' => comment
-    } elsif (/^\#\s*(.*)$/) {
-      $html .= "<!-- " . &markup_inline($1) . " -->\n";
-      $flag = '';
-
     # start with '*', '**', '***' => hx
     } elsif (/^(\*{1,3})\s*(.*)$/) {
       my $lv = length($1) + $level;
