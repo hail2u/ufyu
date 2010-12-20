@@ -160,7 +160,7 @@ sub markup_blocklevel {
       $flag = "</dl>";
 
     # start with '>' => blockquote and p
-    } elsif (/^>\s*(.*)$/) {
+    } elsif (/^\s*>\s*(.*)$/) {
       $html .= "<blockquote>\n" if !$flag;
       $html .= "<p>" . &markup_inline($1) . "</p>\n" if $1;
       $flag = "</blockquote>";

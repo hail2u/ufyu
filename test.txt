@@ -28,11 +28,11 @@ Nisi, pharetra nec, lobortis sed, [[google:いんたーだむ:interdum]] eget, a
 
 Ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque at libero eget ipsum pellentesque dictum. Quisque sollicitudin tellus nec ligula. Sed nec velit quis ante aliquam aliquet.
 
-> Nunc gravida purus non nisl.
-> Mauris ac elit.
-> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-> Duis ligula.
-> Integer hendrerit, tellus eu luctus sagittis, erat dui vestibulum enim, facilisis viverra lectus justo at dolor.
+    > Nunc gravida purus non nisl.
+    > Mauris ac elit.
+    > Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+    > Duis ligula.
+    > Integer hendrerit, tellus eu luctus sagittis, erat dui vestibulum enim, facilisis viverra lectus justo at dolor.
 
 Ut quis ante. Donec sodales elit non odio. Suspendisse egestas lectus et diam. Integer ipsum.
 
