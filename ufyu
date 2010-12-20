@@ -107,7 +107,7 @@ sub markup_blocklevel {
       $flag = '';
 
     # start with '#', '##', '###', '####', '#####', '######' => hx
-    } elsif (/^(\*{1,6})\s*(.*)$/) {
+    } elsif (/^(\#{1,6})\s*(.*)$/) {
       my $lv = length($1) + $level;
       $html .= "<h$lv>" . &markup_inline($2) . "</h$lv>\n";
       $flag = '';
@@ -125,7 +125,7 @@ sub markup_blocklevel {
       $flag = "</pre>";
 
     # start with '*',  '**',  '***',  '*****' => ul
-    } elsif (/^(\-{1,4})\s*(.*)$/) {
+    } elsif (/^(\*{1,4})\s*(.*)$/) {
       $html .= "<ul>\n" if !$flag;
       $nest = 1 if !$nest;
       my $level = length($1);
