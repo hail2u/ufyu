@@ -112,20 +112,8 @@ sub markup_blocklevel {
       $html .= "<h$lv>" . &markup_inline($2) . "</h$lv>\n";
       $flag = '';
 
-    # start with '>' => blockquote and p
-    } elsif (/^>\s*(.*)$/) {
-      $html .= "<blockquote>\n" if !$flag;
-      $html .= "<p>" . &markup_inline($1) . "</p>\n" if $1;
-      $flag = "</blockquote>";
-
-    # start with ' ' => pre
-    } elsif (/^[ ](.*)$/) {
-      $html .= "<pre>\n" if !$flag;
-      $html .= &markup_inline($1) . "\n";
-      $flag = "</pre>";
-
     # start with '*',  '**',  '***',  '*****' => ul
-    } elsif (/^(\*{1,4})\s*(.*)$/) {
+    } elsif (/^\s*(\*{1,4})\s*(.*)$/) {
       $html .= "<ul>\n" if !$flag;
       $nest = 1 if !$nest;
       my $level = length($1);
@@ -145,7 +133,7 @@ sub markup_blocklevel {
       $flag = "</ul>";
 
     # start with '+', '++', '+++', '++++' => ol
-    } elsif (/^(\+{1,4})\s*(.*)$/) {
+    } elsif (/^\s*(\+{1,4})\s*(.*)$/) {
       $html .= "<ol>\n" if !$flag;
       $nest = 1 if !$nest;
       my $level = length($1);
@@ -165,11 +153,23 @@ sub markup_blocklevel {
       $flag = "</ol>";
 
     # start with ':' and include '->' => dl and dt, dd
-    } elsif (/^:\s*(.*?)\s*->\s*(.*?)$/) {
+    } elsif (/^\s*:\s*(.*?)\s*->\s*(.*?)$/) {
       $html .= "<dl>\n" if !$flag;
       $html .= "<dt>" . &markup_inline($1) . "</dt>\n";
       $html .= "<dd>" . &markup_inline($2) . "</dd>\n";
       $flag = "</dl>";
+
+    # start with '>' => blockquote and p
+    } elsif (/^>\s*(.*)$/) {
+      $html .= "<blockquote>\n" if !$flag;
+      $html .= "<p>" . &markup_inline($1) . "</p>\n" if $1;
+      $flag = "</blockquote>";
+
+    # start with ' ' => pre
+    } elsif (/^[ ](.*)$/) {
+      $html .= "<pre>\n" if !$flag;
+      $html .= &markup_inline($1) . "\n";
+      $flag = "</pre>";
 
     # anything other => p
     } else {
