@@ -8,8 +8,6 @@
 
 <p>Duis facilisis porttitor arcu. Maecenas odio dui, dapibus sit amet, ultricies in, tempor a, lectus. In in nulla sit amet purus tempor mattis.</p>
 
-<!-- Nisl ante, aliquam in, consequat quis, tempus et, leo. Integer dignissim. Quisque mattis, orci a rutrum malesuada, nulla ligula facilisis purus, quis dapibus velit odio ut nisl. -->
-
 <p>Pellentesque lacus leo,<br />
 <em>aliquam</em> <strong>id</strong>, <cite>blandit</cite> <dfn>eu</dfn> <code>consequat</code>, <samp>bibendum</samp> <kbd>non</kbd>, <var>est</var>. <abbr>Suspendisse</abbr> <acronym>elementum</acronym> <del>consequat</del> <ins>neque</ins>. Pellentesque  euismod nisl.</p>
 
