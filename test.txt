@@ -16,15 +16,15 @@ Pellentesque lacus leo,<br />[[em:aliquam]] [[strong:id]], [[cite:blandit]] [[df
 
 Amet, consectetuer [[img:http://example.com/example.png:320:240:adipiscing]] elit. Integer a ligula a libero hendrerit iaculis. Praesent elementum porta enim.
 
-* Lorem Ipsum
+# Lorem Ipsum
 
 Aliquam placerat, arcu in [[http://example.com/:bibendum elementum]], magna elit eleifend purus, eget commodo lorem dui quis sapien. Nullam tempus. Sed facilisis fringilla magna.
 
-** Dolor Sit
+## Dolor Sit
 
 Nisi, pharetra nec, lobortis sed, [[google:いんたーだむ:interdum]] eget, arcu. Nullam mollis, turpis id faucibus faucibus, velit velit condimentum justo, sodales varius ante nibh vitae felis. In risus purus, rutrum nec, pretium eu, varius ut, elit.
 
-*** Vestibulum Ante
+### Vestibulum Ante
 
 Ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque at libero eget ipsum pellentesque dictum. Quisque sollicitudin tellus nec ligula. Sed nec velit quis ante aliquam aliquet.
 
