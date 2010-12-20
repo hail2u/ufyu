@@ -10,11 +10,13 @@
 
 Duis facilisis porttitor arcu. Maecenas odio dui, dapibus sit amet, ultricies in, tempor a, lectus. In in nulla sit amet purus tempor mattis.
 
-Pellentesque lacus leo,<br />[[em:aliquam]] [[strong:id]], [[cite:blandit]] [[dfn:eu]] [[code:consequat]], [[samp:bibendum]] [[kbd:non]], [[var:est]]. [[abbr:Suspendisse]] [[acronym:elementum]] [[del:consequat]] [[ins:neque]]. Pellentesque  euismod nisl.
-
 ----
 
+Pellentesque lacus leo,<br />[[em:aliquam]] [[strong:id]], [[cite:blandit]] [[dfn:eu]] [[code:consequat]], [[samp:bibendum]] [[kbd:non]], [[var:est]]. [[abbr:Suspendisse]] [[acronym:elementum]] [[del:consequat]] [[ins:neque]]. Pellentesque  euismod nisl.
+
 Amet, consectetuer [[img:http://example.com/example.png:320:240:adipiscing]] elit. Integer a ligula a libero hendrerit iaculis. Praesent elementum porta enim.
+
+- - - -
 
 # Lorem Ipsum
 
@@ -28,21 +30,7 @@ Nisi, pharetra nec, lobortis sed, [[google:いんたーだむ:interdum]] eget, a
 
 Ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque at libero eget ipsum pellentesque dictum. Quisque sollicitudin tellus nec ligula. Sed nec velit quis ante aliquam aliquet.
 
-    > Nunc gravida purus non nisl.
-    > Mauris ac elit.
-    > Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-    > Duis ligula.
-    > Integer hendrerit, tellus eu luctus sagittis, erat dui vestibulum enim, facilisis viverra lectus justo at dolor.
-
-Ut quis ante. Donec sodales elit non odio. Suspendisse egestas lectus et diam. Integer ipsum.
-
-    Maecenas magna justo, suscipit et,
-    ultricies in, suscipit vel, augue.
-    Aenean dictum, sapien ac scelerisque
-    bibendum, massa nisi ultricies ante,
-    eget dignissim arcu metus in dui.
-
-Leo, sit amet scelerisque dui nisi quis risus. Suspendisse interdum, nunc sit amet pretium scelerisque, velit nunc accumsan mi, eget eleifend nibh dui id neque. Aliquam erat volutpat.
+****
 
     * sed imperdiet ligula
     ** sed dolor donec
@@ -78,8 +66,28 @@ Aliquam erat volutpat. Ut lobortis eros sed ante. Vestibulum metus.
 
 Aliquam eget magna vel nunc convallis rutrum. Curabitur nulla eros, tempus vel, cursus et, elementum at, odio. In pulvinar hendrerit eros.
 
+* * * *
+
+    > Nunc gravida purus non nisl.
+    > Mauris ac elit.
+    > Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+    > Duis ligula.
+    > Integer hendrerit, tellus eu luctus sagittis, erat dui vestibulum enim, facilisis viverra lectus justo at dolor.
+
+Ut quis ante. Donec sodales elit non odio. Suspendisse egestas lectus et diam. Integer ipsum.
+
+____
+
+    Maecenas magna justo, suscipit et,
+    ultricies in, suscipit vel, augue.
+    Aenean dictum, sapien ac scelerisque
+    bibendum, massa nisi ultricies ante,
+    eget dignissim arcu metus in dui.
+
+Leo, sit amet scelerisque dui nisi quis risus. Suspendisse interdum, nunc sit amet pretium scelerisque, velit nunc accumsan mi, eget eleifend nibh dui id neque. Aliquam erat volutpat.
+
+_ _ _ _
+
 Nam ut enim ac nunc semper convallis. Praesent non nisl. Fusce sagittis.
 
 Maecenas in mi. Fusce tincidunt pellentesque diam. Proin risus risus, condimentum et, placerat eget, porta id, diam.
-
-Duis massa lorem, adipiscing in, sollicitudin tempus, mollis quis, quam. In nec dui. Nam sollicitudin magna vel velit.

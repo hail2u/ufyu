@@ -8,12 +8,14 @@
 
 <p>Duis facilisis porttitor arcu. Maecenas odio dui, dapibus sit amet, ultricies in, tempor a, lectus. In in nulla sit amet purus tempor mattis.</p>
 
+<hr />
+
 <p>Pellentesque lacus leo,<br />
 <em>aliquam</em> <strong>id</strong>, <cite>blandit</cite> <dfn>eu</dfn> <code>consequat</code>, <samp>bibendum</samp> <kbd>non</kbd>, <var>est</var>. <abbr>Suspendisse</abbr> <acronym>elementum</acronym> <del>consequat</del> <ins>neque</ins>. Pellentesque  euismod nisl.</p>
 
-<hr />
-
 <p>Amet, consectetuer <img src="http://example.com/example.png" alt="adipiscing" width="320" height="240" /> elit. Integer a ligula a libero hendrerit iaculis. Praesent elementum porta enim.</p>
+
+<hr />
 
 <h1>Lorem Ipsum</h1>
 
@@ -27,25 +29,7 @@
 
 <p>Ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque at libero eget ipsum pellentesque dictum. Quisque sollicitudin tellus nec ligula. Sed nec velit quis ante aliquam aliquet.</p>
 
-<blockquote>
-<p>Nunc gravida purus non nisl.</p>
-<p>Mauris ac elit.</p>
-<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-<p>Duis ligula.</p>
-<p>Integer hendrerit, tellus eu luctus sagittis, erat dui vestibulum enim, facilisis viverra lectus justo at dolor.</p>
-</blockquote>
-
-<p>Ut quis ante. Donec sodales elit non odio. Suspendisse egestas lectus et diam. Integer ipsum.</p>
-
-<pre>
-Maecenas magna justo, suscipit et,
-ultricies in, suscipit vel, augue.
-Aenean dictum, sapien ac scelerisque
-bibendum, massa nisi ultricies ante,
-eget dignissim arcu metus in dui.
-</pre>
-
-<p>Leo, sit amet scelerisque dui nisi quis risus. Suspendisse interdum, nunc sit amet pretium scelerisque, velit nunc accumsan mi, eget eleifend nibh dui id neque. Aliquam erat volutpat.</p>
+<hr />
 
 <ul>
 <li>sed imperdiet ligula
@@ -110,8 +94,32 @@ eget dignissim arcu metus in dui.
 
 <p>Aliquam eget magna vel nunc convallis rutrum. Curabitur nulla eros, tempus vel, cursus et, elementum at, odio. In pulvinar hendrerit eros.</p>
 
+<hr />
+
+<blockquote>
+<p>Nunc gravida purus non nisl.</p>
+<p>Mauris ac elit.</p>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+<p>Duis ligula.</p>
+<p>Integer hendrerit, tellus eu luctus sagittis, erat dui vestibulum enim, facilisis viverra lectus justo at dolor.</p>
+</blockquote>
+
+<p>Ut quis ante. Donec sodales elit non odio. Suspendisse egestas lectus et diam. Integer ipsum.</p>
+
+<hr />
+
+<pre>
+Maecenas magna justo, suscipit et,
+ultricies in, suscipit vel, augue.
+Aenean dictum, sapien ac scelerisque
+bibendum, massa nisi ultricies ante,
+eget dignissim arcu metus in dui.
+</pre>
+
+<p>Leo, sit amet scelerisque dui nisi quis risus. Suspendisse interdum, nunc sit amet pretium scelerisque, velit nunc accumsan mi, eget eleifend nibh dui id neque. Aliquam erat volutpat.</p>
+
+<hr />
+
 <p>Nam ut enim ac nunc semper convallis. Praesent non nisl. Fusce sagittis.</p>
 
 <p>Maecenas in mi. Fusce tincidunt pellentesque diam. Proin risus risus, condimentum et, placerat eget, porta id, diam.</p>
-
-<p>Duis massa lorem, adipiscing in, sollicitudin tempus, mollis quis, quam. In nec dui. Nam sollicitudin magna vel velit.</p>
