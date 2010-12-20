@@ -20,7 +20,7 @@ Amet, consectetuer [[img:http://example.com/example.png:320:240:adipiscing]] eli
 
 * Lorem Ipsum
 
-Aliquam placerat, arcu in [[a:http://example.com/:bibendum elementum]], magna elit eleifend purus, eget commodo lorem dui quis sapien. Nullam tempus. Sed facilisis fringilla magna.
+Aliquam placerat, arcu in [[http://example.com/:bibendum elementum]], magna elit eleifend purus, eget commodo lorem dui quis sapien. Nullam tempus. Sed facilisis fringilla magna.
 
 ** Dolor Sit
 

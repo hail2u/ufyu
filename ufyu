@@ -207,7 +207,7 @@ sub markup_inline {
   $str =~ s!&lt;br$xhtml?&gt;!<br$xhtml>\n!g;
   $str =~ s!\[\[$regexp_inline:(.+?)\]\]!<$1>$2</$1>!g;
   $str =~ s!\[\[img:(https?:\/\/.+?\.(png|jpg|jpeg|gif)):(\d+?):(\d+?):(.+?)\]\]!<img src="$1" alt="$5" width="$3" height="$4"$xhtml>!g;
-  $str =~ s!\[\[a:(https?:\/\/.+?):(.+?)\]\]!<a href="$1">$2</a>!g;
+  $str =~ s!\[\[(https?:\/\/.+?):(.+?)\]\]!<a href="$1">$2</a>!g;
   $str =~ s!\[\[(\w+?):(.+?):(.+?)\]\]!&anchor_maker($1, $2, $3)!eg;
 
   return $str;
