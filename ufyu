@@ -102,7 +102,7 @@ sub markup_blocklevel {
       $nest = 0;
 
     # repeat '-', '*', '='  => hr
-    } elsif (/^[-*_\s]+$/) {
+    } elsif (/^[-*_][-*_\s]*$/) {
       $html .= "<hr$xhtml>\n";
       $flag = '';
 
