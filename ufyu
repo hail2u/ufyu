@@ -159,17 +159,17 @@ sub markup_blocklevel {
       $html .= "<dd>" . &markup_inline($2) . "</dd>\n";
       $flag = "</dl>";
 
-    # start with '>' => blockquote and p
-    } elsif (/^\s*>\s*(.*)$/) {
-      $html .= "<blockquote>\n" if !$flag;
-      $html .= "<p>" . &markup_inline($1) . "</p>\n" if $1;
-      $flag = "</blockquote>";
-
     # start with '    ' => pre
     } elsif (/^[ ]{4}(.*)$/) {
       $html .= "<pre>\n" if !$flag;
       $html .= &markup_inline($1) . "\n";
       $flag = "</pre>";
+
+    # start with '>' => blockquote and p
+    } elsif (/^\s*>\s*(.*)$/) {
+      $html .= "<blockquote>\n" if !$flag;
+      $html .= "<p>" . &markup_inline($1) . "</p>\n" if $1;
+      $flag = "</blockquote>";
 
     # anything other => p
     } else {
